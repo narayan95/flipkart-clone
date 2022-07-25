@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@500&family=Fascinate&family=Josefin+Sans:ital,wght@1,100&family=Lobster&family=Nunito+Sans:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@500&family=Fascinate&family=Josefin+Sans:ital,wght@1,100&family=Lobster&family=Nunito+Sans:ital@0;1&display=swap");
 
 :root {
     --main-bg-color: #2874f0;
@@ -8,124 +8,241 @@
     margin: 0;
     padding: 0;
     text-transform: capitalize;
+    box-sizing: border-box;
 }
 
-header {
-    width: 100vw;
-    height: 8vh;
-    background-color: var(--main-bg-color);
-    font-family: 'Nunito Sans';
-}
-
+/*navigation bar code starts here*/
 nav {
     display: flex;
-}
-
-nav ul {
-    height: 8vh;
-    display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 8vh;
+    background-color: var(--main-bg-color);
+    font-family: "Nunito Sans";
     align-items: center;
+    flex-wrap: wrap;
 }
 
-nav ul li {
-    list-style: none;
-    padding: 0 20px;
-    font-size: 18px;
+.blank {
+    width: 10%;
+    height: auto;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    font-weight: bold;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    padding: 8px;
+.moreitem {
+    display: none;
+    background-color: var(--main-bg-color);
     cursor: pointer;
 }
 
-.logo img {
+.category {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 6px;
+}
+
+.cat2 {
+    display: none;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    font-weight: 800;
+}
+
+.moreitem:hover .cat2 {
+    display: block;
+}
+
+.cat2 ul li {
+    width: 190px;
+    height: 60px;
+    padding: 12px 8px;
+    color: var(--main-bg-color);
+    list-style-type: none;
+    font-weight: 600;
+    border-bottom: groove 4px white;
+}
+
+.li {
+    border-radius: 5%;
+}
+
+.li1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.li1 img {
+    height: 25px;
+    width: 25px;
+}
+
+.li2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.li2 img {
+    height: 30px;
+    width: 30px;
+}
+
+.li3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.li3 img{
+    height: 20px;
+    width: 20px;
+}
+.li4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.li5 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.li5 i {
+    margin-right: 10px;
+}
+
+.logo {
+    padding: 3px;
+    cursor: pointer;
+}
+
+.flipkart {
     width: 75px;
-    padding: 8px;
+    height: 20px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.flipkart img {
+    width: 75px;
+    height: 20px;
+}
+
+.explore {
+    font-size: 12px;
+    color: white;
+}
+
+.plus {
+    font-size: 12px;
+    color: gold;
+}
+.plus:hover{
+    text-decoration: underline gold;
+}
+
+.plusimg img {
+    width: 0.7rem;
+    height: 0.7rem;
+}
+
+.container0 {
+    display: flex;
 }
 
 .searchbar {
     display: flex;
-    align-items: center;
 }
 
 .searchbar input {
     width: 35vw;
-    height: 4vh;
+    height: 3em;
     border-radius: 2px;
-    margin-left: 3vw;
-    ;
-    margin-right: 25px;
     padding-left: 20px;
+    border-right: none;
 }
 
 .searchbar button {
-    font-family: 'Nunito Sans';
-    font-weight: 200;
-    padding-left: 15px;
+    height: 3em;
+    width: 35px;
+    background-color: white;
+    border: 1px groove grey;
+    border-left: none;
+    margin-top: 1px;
+    color: var(--main-bg-color);
 }
 
-.searchbar button:hover {
-    font-weight: 800;
+.item0 {
+    margin-left: 10px;
+    margin-top: 3px;
 }
 
 .button1 {
-    display: flex;
-    align-items: center;
     border-radius: 2px;
-    width: 80px;
+    width: 9vw;
     height: 35px;
     color: #2874f0;
     background-color: white;
-    border: initial white;
     cursor: pointer;
+    font-family: "Nunito Sans";
+    font-weight: 800;
+    border: 1px groove #2874f0;
+    font-size: 16px;
+    margin-left: 15px;
 }
 
 .seller {
     color: white;
-    display: flex;
-    align-items: center;
-    margin-left: 32px;
-}
-
-.seller:hover {
-    font-weight: bolder;
-    cursor: pointer;
-}
-
-.more {
-    display: flex;
-    align-items: center;
     margin-left: 20px;
-}
-
-.more select {
-    width: 60px;
-    height: 25px;
-    background-color: #2874f0;
-    border: none;
-    color: white;
+    font-weight: 600;
     cursor: pointer;
 }
 
-.more select:hover {
-    font-weight: bolder;
+.combine {
+    display: flex;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    align-items: center;
 }
 
-.more select option {
-    color: black;
+.line {
+    align-self: center;
+    margin: 0px 15px;
+}
+
+.morename {
+    display: none;
+    position: fixed;
     background-color: white;
+    font-size: 15px;
+}
+.morename ul li i{
+    margin-right: 10px;
+}
+.more:hover .morename {
+    display: inline-block;
+}
+
+.drop {
+    padding: 15px 15px;
+    color: var(--main-bg-color);
+    border-bottom: groove 4px white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.li6 img {
+    height: 30px;
+    width: 30px;
+}
+
+.li7 img {
+    height: 25px;
+    width: 25px;
+}
+.cart:hover{
+    text-decoration: underline;
 }
 
 .cart {
@@ -133,158 +250,73 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     margin-left: 30px;
-}
-
-.cart:hover {
     font-weight: bolder;
     cursor: pointer;
+    margin-right: 10px;
 }
-.cartimg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20px;
-    cursor: pointer;
-}
-.cartimg img{
-    width: 40px;
+
+.cart img {
     height: 30px;
+    width: 30px;
+    margin-right: 10px;
 }
-.cartimg img:hover{
-    width: 80px;
-    height: 60px;
-}
+/*navigation bar code ends here*/
+/*main body code starts here*/
 
 .main {
     min-height: 87vh;
+    background-color: rgb(231, 231, 231);
 }
 
 .top {
     display: flex;
-     cursor: pointer;
+    cursor: pointer;
+    background-color: white;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    flex-wrap: wrap;
 }
-
-.one {
-    margin: 10px 50px;
-    
+.one,.second, .third, .fourth, .fifth, .sixth{
+    margin: 10px;
 }
-.one img{
+.one img,.second img,.third img,.fourth img,.fifth img,.sixth img{
     width: 75px;
     height:75px;
 }
-.one img:hover{
-    height: 100px;
-    width: 100px;
-}
-
-.second {
-    margin: 10px 80px;
-     
-}
-.second img{
-    width: 75px;
-    height:75px ;
-}
-.second img:hover{
-    height: 100px;
-    width: 100px;
-}
-.third {
-    margin: 10px 80px;
-     
-}
-.third img{
-    width: 75px;
-    height:75px ;
-}
-.third img:hover{
-    height: 100px;
-    width: 100px;
-}
-.fourth {
-    margin: 10px 80px;
-     
-}
-.fourth img{
-    width: 75px;
-    height:75px ;
-}
-.fourth img:hover{
-    height: 100px;
-    width: 100px;
-}
-.fifth {
-    margin: 10px 80px;
-     
-}
-.fifth img{
-    width: 75px;
-    height:75px ;
-}
-.fifth img:hover{
-    height: 100px;
-    width: 100px;
-}
-.sixth {
-    margin: 10px 80px;
-     
-}
-.sixth img{
-    width: 75px;
-    height:75px ;
-}
-.sixth img:hover{
-    height: 100px;
-    width: 100px;
-}
 .text {
     display: flex;
-    justify-content: center;
-    align-items: center;
+   justify-content: center;
 }
-
-.hr{
-    background-color: rgb(231, 231, 231);
-    height: 2vh;
-    width: 100vw;
+.text:hover{
+    color: var(--main-bg-color);
+    font-weight: 600;
+    text-decoration: underline ;
 }
 .content{
+    margin: 15px 0px;
     height: 30vh;
+    width:100%;
     background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 10px rgb(231, 231, 231);
 }
 .content img{
-    width: 80vw;
+    width:100%;
     height: 30vh;
     cursor: pointer;
 }
-.content img:hover{
-width: 100vw;
-
-}
-.text2 {
+.box{
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .dailydeals{
     font-size: 25px;
-    
-
     display: flex;
-   height: 50px;
-   width: 100%;
-   
-   border:  solid 2px rgb(231, 231, 231);
-   align-self: center;
    align-items: center;
+   background-color: white;
+   margin: 5px 5px;
 }
 .deals{
-    padding-left: 20px;
+    margin-left: 20px;
     color: var(--main-bg-color);
+    font-weight: 700;
    
 }
 .dailydeals button{
@@ -294,116 +326,42 @@ width: 100vw;
     height: 40px;
     cursor: pointer;
     border: none;
-    margin-left: 70%;
+    margin: 5px 150px;
     font-size: medium;
-   
-}
-.box1{
-    border: solid 8px rgb(231, 231, 231);
 }
 .bottom {
     display: flex;
-     cursor: pointer;
-     border-radius: 2px;
-
-margin-left: 8px;
-align-items: center;
-height: 70%;
+    margin: 10px 5px;
+    align-items: center;
+    height: auto;
+    justify-content: space-evenly;
+    background-color: white;
+    flex-wrap: wrap;
+    width: auto;
 }
-.on {
-    margin: 10px 100px;
-    
+.on,.secon, .thir, .fourt, .fift{
+    margin: 25px;
+    cursor: pointer;
 }
-.on img{
-    height:125px;
-    width: 125px;
+.on img,.secon img,.thir img,.fourt img,.fourt img,.fift img{
+    height:150px;
+    width: 175px;
 }
-.onimg img:hover{
-    height:140px;
-    width:140px;
-}
-
-.secon {
-    margin: 10px 40px;
-     
-}
-.secon img{
-    width: 125px;
-    height:125px;
-}
-.seconimg img:hover{
-    height:140px;
-    width:140px;
-}
-.thir {
-    margin: 10px 40px;
-     
-}
-.thir img{
-    width: 125px;
-    height:125px;
-}
-.thirimg img:hover{
-    height:140px;
-    width:140px;
-}
-.fourt {
-    margin: 10px 40px;
-     
-}
-.fourt img{
-    width: 125px;
-    height:125px;
-}
-.fourtimg img:hover{
-    height:140px;
-    width:140px;
-}
-.fift {
-    margin: 10px 40px;
-     
-}
-.fift img{
-    width: 125px;
-    height:125px;
-}
-.fiftimg img:hover{
-    height:140px;
-    width:140px;
-}
-.box{
-    display: flex;
-}
-.sideimg img{
-    height:300px;
-    width:225px;
-    position: relative;
-    margin: 2px 2px;
-
-}
-.sideimg{
-    position: relative;
-    
-    
-    border: solid 5px rgb(231, 231, 231);
-}
-.middle {
-    display: flex;
-
-}
-.text2{
-    color:blue;
-    font-size: smaller;
-
-}
-footer {
+.text2 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: var(--main-bg-color);
-    color: white;
-    height: 5vh;
-    width: 100vw;
-    font-family: 'Nunito Sans';
-    font-size: 18px;
+    color:blue;
+    font-size: smaller;
 }
+.sideimg img{
+    width:250px;
+    height: 300px;
+
+    margin: 5px 5px;
+}
+
+
+
+
+
+
