@@ -1,0 +1,57 @@
+@media only screen and (max-width:650px) {
+    nav{
+        background-color: var(--main-bg-color);
+        flex-direction: column;
+    align-items: center;
+    }
+    .container0{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .searchbar input {
+        width: 250px;
+    padding: 7px;}
+        .button1 {
+            width: 70px;
+        }
+        .none{
+            display: none;
+        }
+        .moreitem{
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            margin: 0;
+            padding: 0;
+        }
+        .deals{
+            
+            font-size: 19px;
+        }
+        .dailydeals button{
+            width: 70px;
+            height: 30px;
+            font-size: small;
+            margin-left: 10px;
+        }
+        .on img,.secon img,.thir img,.fourt img,.fourt img,.fift img{
+        height: 100px;
+        width: 100px;
+        }
+        .on,.secon, .thir, .fourt, .fift{
+            margin: 5px;
+        }
+        .box{
+            display: inline-block;
+        }
+        .sideimg img{
+            display: none;
+           width: max-content;
+           height: max-content;
+            margin: 0;
+        }
+        .text, .text2{
+font-size: small;
+        }
+}
