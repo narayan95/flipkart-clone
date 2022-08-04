@@ -1,0 +1,79 @@
+@media only screen and (max-width:1385px) {
+    .add{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sideimg img,.sideimg3 img{
+        width:250px;
+        height:275px;
+        margin-left: 100px;
+    }
+    .sideimg3{
+        display: inline-block;
+       
+    }
+    .sideimg2 {
+        display: none;
+    }
+}
+@media only screen and (max-width:650px) {
+    nav{
+        background-color: var(--main-bg-color);
+        flex-direction: column;
+    align-items: center;
+    }
+    .container0{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .searchbar input {
+        width: 250px;
+    padding: 7px;}
+        .button1 {
+            width: 70px;
+        }
+        .none{
+            display: none;
+        }
+        .moreitem{
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            margin: 0;
+            padding: 0;
+        }
+        .deals,.before{
+            
+            font-size: 19px;
+        }
+        .dailydeals button ,.neverbeforedeals button{
+            width: 70px;
+            height: 30px;
+            font-size: small;
+            margin-left: 10px;
+        }
+        .on img,.secon img,.thir img,.fourt img,.fourt img,.fift img{
+        height: 100px;
+        width: 100px;
+        }
+        .on,.secon, .thir, .fourt, .fift{
+            margin: 5px;
+        }
+        .box{
+            display: inline-block;
+        }
+        .sideimg img,.sideimg3 img{
+            width:150px;
+            height:200px;
+            margin-left: 100px;
+        }
+        .text, .text2{
+font-size: small;
+
+        }
+        .sideimg img,.sideimg3 img{
+            margin-left:0px;
+        }
+        
+}
