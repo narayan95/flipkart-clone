@@ -169,18 +169,18 @@ nav {
 .searchbar input {
     width: 35vw;
     height: 3em;
-    border-radius: 2px;
     padding-left: 20px;
     border-right: none;
+    border: none;
 }
 
 .searchbar button {
     height: 3em;
     width: 35px;
     background-color: white;
-    border: 1px groove grey;
+   border:none;
     border-left: none;
-    margin-top: 1px;
+    margin-top: 0px;
     color: var(--main-bg-color);
 }
 
